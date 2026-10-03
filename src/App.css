@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 1rem;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 3px solid darkgray;
+    padding: 10px;
+}
+
+.delete-btn {
+    color:white;
+    background-color: red;
+    border: none;
+    padding: 10px;
+    width:100px;
+    cursor: pointer;
+}
+
+.check-box {
+    width:20px;
+    accent-color: aqua;
+    cursor: pointer;
+}
+
+.task-item.completed {
+    border-color: aqua;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    opacity:0.6;
+}
+
+.clear-btn, .reset-btn {
+    width:100px;
+    padding: 10px;
+    color:white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.completed-tasks, .total-tasks, .active-tasks{
+    border:none;
+    padding: 10px;
+    background-color: black;
+    color: white; 
+    margin-right: 1rem; 
+}
+
+.count {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.empty-message {
+    margin-top: 1.5rem;
+    opacity: 0.6;
+}
+
+.filter-btn, .add-btn {
+    padding: 10px;
+    color:white;
+    background-color: black;
+    border:none;
+    margin-right: 1rem;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-btn.active {
+    color:black;
+    background-color: rgb(236, 176, 96);
+}
+
+.add-btn {
+    margin-left: 1rem;
+}
+
+.add-task {
+    padding: 7px;
+    border: 3px solid black;
+}
+
+.filter-btn:hover, 
+.add-btn:hover {
+    background-color: rgb(16, 67, 112);
+    color: white;
+    cursor: pointer;
+}
+
+.reset-btn:hover, .delete-btn:hover, .clear-btn:hover {
+    background-color: rgb(248, 60, 60);
+    cursor: pointer;
+}
+
